@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import "../styles/globals.css";
 
+
 let title = "Dream Room Generator";
 let description = "Generate your dream room in seconds.";
 let ogimage = "https://roomgpt-demo.vercel.app/og-image.png";
@@ -37,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#17181C] text-white">
+      <body className="bg-[#FFFFFF] text-black">
         {children}
         <Analytics />
       </body>

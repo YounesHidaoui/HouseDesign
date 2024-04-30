@@ -28,15 +28,15 @@ const options: UploadWidgetConfig = {
     colors: {
       primary: "#2563EB", // Primary buttons & links
       error: "#d23f4d", // Error messages
-      shade100: "#fff", // Standard text
-      shade200: "#fffe", // Secondary button text
-      shade300: "#fffd", // Secondary button text (hover)
-      shade400: "#fffc", // Welcome text
-      shade500: "#fff9", // Modal close button
-      shade600: "#fff7", // Border
-      shade700: "#fff2", // Progress indicator background
-      shade800: "#fff1", // File item background
-      shade900: "#ffff", // Various (draggable crop buttons, etc.)
+      shade100: "#333", // Standard text
+      shade200: "#333e", // Secondary button text
+      shade300: "#333d", // Secondary button text (hover)
+      shade400: "#333c", // Welcome text
+      shade500: "#3339", // Modal close button
+      shade600: "#3337", // Border
+      shade700: "#3332", // Progress indicator background
+      shade800: "#3331", // File item background
+      shade900: "#333f", // Various (draggable crop buttons, etc.)
     },
   },
 };
@@ -102,10 +102,10 @@ export default function DreamPage() {
   }
 
   return (
-    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
+    <div className="flex max-w-6xl mx-auto flex-col items-center justify-center py-2 min-h-screen bg-white">
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
-        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-100 sm:text-6xl mb-5">
+        <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
           Generate your <span className="text-blue-600">dream</span> room
         </h1>
         <ResizablePanel>
@@ -229,10 +229,10 @@ export default function DreamPage() {
               {loading && (
                 <button
                   disabled
-                  className="bg-blue-500 rounded-full text-white font-medium px-4 pt-2 pb-3 mt-8 w-40"
+                  className="bg-blue-500 rounded-full text-black font-medium px-4 pt-2 pb-3 mt-8 w-40"
                 >
                   <span className="pt-4">
-                    <LoadingDots color="white" style="large" />
+                    <LoadingDots color="black" style="large" />
                   </span>
                 </button>
               )}
@@ -253,7 +253,7 @@ export default function DreamPage() {
                       setRestoredLoaded(false);
                       setError(null);
                     }}
-                    className="bg-blue-500 rounded-full text-white font-medium px-4 py-2 mt-8 hover:bg-blue-500/80 transition"
+                    className="bg-blue-500 rounded-full text-black font-medium px-4 py-2 mt-8 hover:bg-blue-500/80 transition"
                   >
                     Generate New Room
                   </button>
